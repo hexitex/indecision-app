@@ -1,0 +1,38 @@
+
+.widget{
+    background-color:$light-blue;
+    margin-bottom: $xl-size;
+    
+   // padding:$m-size;
+}
+.widget__content{
+    overflow-y: auto;
+    max-height: 50vh;
+
+}
+.widget__message{
+    color:$off-white;
+    margin: 0;
+    padding:$l-size;
+    text-align: center;
+    border-bottom: 1px solid lighten($light-blue,10%);
+}
+//widget header
+.widget-header{
+    background-color: $blue;
+    color:$off-white;
+    padding:$m-size;
+    display:flex;
+    justify-content: space-between;
+
+}
+.widget-header__title{
+    margin:0;
+    font-size: $m-size;
+}
+@media (min-width:$desktop-breakpoint) {
+    .widget-header__title{
+        font-size: $ml-size;
+    
+    }
+}
